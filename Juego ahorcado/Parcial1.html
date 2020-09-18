@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Ahorcado</title>
+    <h1 class="text-center py-4">Juego del ahorcado</h1>
+  </head>
+  <body>
+    <!--modal-->
+    <div class="modal fade" id="modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Se acabo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="Mbody">
+            Felicidades, eres un ganador , si quieres seguir pulsa el boton azul
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" id="modalcerrar" onclick="botonCerrar()">Cerrar</button>
+            <button type="button" class="btn btn-primary" onclick="location.reload()">Volver a jugar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--imagen-->
+    <div class="container">
+      <div class="row">
+        <div class="col-8 text-right">
+          <img src="img/img1.jpg" alt="" srcset="" id="imagen">
+        </div>
+        <!--card-->
+        <div class="col-4 align-self-center">
+          <div class="card">
+            <div class="card-body" id="intentos">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="palabra" class="h1"></div>
+    <!--botones-->
+    <div class="container" id="botones">
+      <ul>
+        <ol class="">
+          <button type="button" class="btn btn-outline-dark" id="btnQ" onclick="botones('q')">Q</button>
+          <button type="button" class="btn btn-outline-dark" id="btnW" onclick="botones('w')">W</button>
+          <button type="button" class="btn btn-outline-dark" id="btnE" onclick="botones('e')">E</button>
+          <button type="button" class="btn btn-outline-dark" id="btnR" onclick="botones('r')">R</button>
+          <button type="button" class="btn btn-outline-dark" id="btnT" onclick="botones('t')">T</button>
+          <button type="button" class="btn btn-outline-dark" id="btnY" onclick="botones('y')">Y</button>
+          <button type="button" class="btn btn-outline-dark" id="btnU" onclick="botones('u')">U</button>
+          <button type="button" class="btn btn-outline-dark" id="btnI" onclick="botones('i')">I</button>
+          <button type="button" class="btn btn-outline-dark" id="btnO" onclick="botones('o')">O</button>
+          <button type="button" class="btn btn-outline-dark" id="btnP" onclick="botones('p')">P</button>
+        </ol>
+        <ol class="py-1" id="btnlinea2">
+          <button type="button" class="btn btn-outline-dark" id="btnA" onclick="botones('a')">A</button>
+          <button type="button" class="btn btn-outline-dark" id="btnS" onclick="botones('s')">S</button>
+          <button type="button" class="btn btn-outline-dark" id="btnD" onclick="botones('d')">D</button>
+          <button type="button" class="btn btn-outline-dark" id="btnF" onclick="botones('f')">F</button>
+          <button type="button" class="btn btn-outline-dark" id="btnG" onclick="botones('g')">G</button>
+          <button type="button" class="btn btn-outline-dark" id="btnH" onclick="botones('h')">H</button>
+          <button type="button" class="btn btn-outline-dark" id="btnJ" onclick="botones('j')">J</button>
+          <button type="button" class="btn btn-outline-dark" id="btnK" onclick="botones('k')">K</button>
+          <button type="button" class="btn btn-outline-dark" id="btnL" onclick="botones('l')">L</button>
+        </ol>
+        <ol class="py-1" id="btnlinea3">
+          <button type="button" class="btn btn-outline-dark" id="btnZ" onclick="botones('z')">Z</button>
+          <button type="button" class="btn btn-outline-dark" id="btnX" onclick="botones('x')">X</button>
+          <button type="button" class="btn btn-outline-dark" id="btnC" onclick="botones('c')">C</button>
+          <button type="button" class="btn btn-outline-dark" id="btnV" onclick="botones('v')">V</button>
+          <button type="button" class="btn btn-outline-dark" id="btnB" onclick="botones('b')">B</button>
+          <button type="button" class="btn btn-outline-dark" id="btnN" onclick="botones('n')">N</button>
+          <button type="button" class="btn btn-outline-dark" id="btnM" onclick="botones('m')">M</button>
+        </ol>
+    </ul>
+        
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/Configuracion.js"></script>
+   <!--generacion del jquery-->
+    <div id="jqueryzone">
+
+    </div>
+  </body>
+</html>

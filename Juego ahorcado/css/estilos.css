@@ -1,0 +1,22 @@
+.altura{
+    height: 550px;
+}
+#botones{
+  
+   padding-left: 310px;
+}
+#btnlinea2{
+    padding-left: 50px;
+}
+#btnlinea3{
+    padding-left: 70px;
+}
+#palabra{
+    padding-left: 650px;
+    padding-top: 10px;
+}
+#imagen{
+    padding-top: 30px;
+    padding-right: 100px;
+    
+}
